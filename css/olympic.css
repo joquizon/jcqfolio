@@ -1,0 +1,21 @@
+@font-face{font-family: hcondm;
+		src:url(helvcond.otf);}
+
+@font-face{font-family:sjers;
+		src:url(sportsjersey.ttf);}
+
+.workbodyoly{
+	height:1500px;
+}	
+
+#olympicfontsample{font-family: sjers;
+				font-size: 20px}
+
+#olympicfontsample2{font-family: hcondm;
+				font-size: 18px}
+
+.olywork{width:100%;
+    margin-top: 30%;
+}
+
+#olybott{background-color:#FF2616;}

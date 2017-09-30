@@ -1,0 +1,65 @@
+.workbody4{height:1500px;
+		overflow-y:scroll}
+
+@font-face {font-family: helvconth;
+			src:url(hcon.ttf) ; }
+
+@font-face {font-family: helvcond;
+			src:url(helvcond.otf) ; }		
+
+@font-face {font-family: team;
+			src:url(teamfury.ttf) ; }
+
+@font-face {font-family: uk;
+			src:url(uk.ttf) ; }								
+
+
+@font-face {font-family: subcl;
+			src:url(cooperhewittlight.otf) ; }	
+
+#nikefontsample{font-family:helvcond;
+				font-size: 18px}
+#nikefontsample2{font-family:team;
+				font-size: 13px}
+#nikefontsample3{font-family:uk;
+				font-size: 20px}
+
+#nikeworkholder {
+    margin-left: 10%;
+    width: 80%;
+}
+
+.nikethumbs{width:80%;
+	    margin-top: 25%;
+		margin-left: 10%;}
+#nikevid{width:50%;
+		margin-top: 24%;
+		margin-left: 25%;
+		display:none;}
+
+.full-screenicon{display:none;}
+
+/*=============credits page*/
+#credit {background-color: white
+}
+#music{color:#545454;
+	font-size: 18px;
+	margin-bottom: 5px;}
+
+.credittext{font-family: subcl;
+		font-size: 15px;
+		color:black;
+		text-align: center}
+#olympiccred{color:gray;}
+.credlink {font-style: italic;
+	color:#3f3f3f
+;
+	font-size: 17px;
+	text-decoration: none}
+#ochannellink{color:gray;}
+#slowcredlink{color:gray;}
+#slowcred{color:gray;}
+#title{color:red;
+		font-size: 21px}
+
+#nikebott{background-color:#FF2616;}		

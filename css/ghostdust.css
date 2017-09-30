@@ -1,0 +1,63 @@
+
+@font-face {font-family: ghostdust;
+							src:url(ghostdust.ttf);}
+@font-face {font-family: helvetica;
+							src:url(helvconlight.otf);}  
+
+@font-face {font-family: codeb;
+							src:url(CODEBold.otf);}							
+
+
+.workbody9{
+	height:1500px;
+}				
+
+#x1{background-color: rgb( 130, 130, 130)}
+
+#x2{background-color: rgb( 110, 110, 110)}
+
+#xfontsample{font-family:ghostdust;
+			font-size: 35px}			
+#xfontsample2{font-family:helvetica ;
+			font-size: 18px}
+#xfontsample3{font-family: codeb;
+			font-size: 15px}
+#ghostbott{background-color:#FF2616;}
+
+#ghostwork{width:70%;
+margin-left: 15%;}
+
+.xwork{ border:1px solid rgb(150,150,150);
+	margin-left: 5%;
+display: block;
+margin-top: 30%;
+	width: 90%}	
+
+
+/*#hometime{    width: 75%;
+    margin-left: -6%;}
+#homedata{    width: 75%;
+    margin-left: -6%;}	*/	
+
+/*#hometimemob{    width: 50%;
+    margin-left: 6%;}
+#homedatamob{    width: 50%;
+    margin-left: 6%;
+	margin-top: 3%}	*/	
+
+.gdmob{    width: 30%;
+	display: inline-block;
+    margin-left: 2%;
+	margin-top: 30%}
+.gdmobl{    width: 50%;
+	display: inline-block;
+    margin-left: 25%;
+	margin-top: 2%}
+#landlandg{margin-top:30%;}
+#landtrackem{margin-top:30%;}
+#portlandg{margin-left: 19%}
+#porttrack{margin-left: 19%}	
+#datmob{    width: 50%;
+    margin-left: 6%;
+	margin-top: 3%}		    
+

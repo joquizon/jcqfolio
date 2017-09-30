@@ -1,0 +1,44 @@
+@font-face {font-family: sou;
+			src:url(southernaire.ttf) ; }	
+
+@font-face {font-family: her;
+			src:url(heraldgothicbold.otf) ; }	
+
+.workbody3{
+	height:1500px;
+}					
+
+#seasalt1a{border:1px solid #340A07;
+	background-color:#340A07;}
+#seasalt2{border:1px solid #000000;
+	background-color:#F8ECC2;}
+#seasalt3{border:1px solid #000000;}
+
+#seasaltfontsample{font-family: sou;
+		font-size:30px;
+}
+
+#seasaltfontsample2{font-family: her;
+		font-size:22px;
+}
+
+.seasaltwork{
+	width:100%;/*
+margin:0 auto;*/
+display: block;
+margin-top: 25%;}
+
+.seasaltworkrub {
+    width: 64%;
+    /* margin: 0 auto; */
+    display: block;
+    margin-top: 25%;
+    margin-left: 18%;
+}
+
+#shirt {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#sstbott{background-color:#FF2616;}

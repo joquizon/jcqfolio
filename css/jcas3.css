@@ -1,0 +1,45 @@
+@font-face {font-family: bloc;
+			src:url(block.ttf) ; }	
+@font-face {font-family: helv;
+			src:url(helvconlight.otf) ; }
+@font-face {font-family: uk;
+			src:url(uk.ttf) ; }	
+
+.workbodyjcas{
+	height:1500px;
+}					
+
+#jc1{background-color: rgb(255, 248, 190);
+border:1px solid #000000;}
+
+#jc2{background-color: rgb(79, 114, 124);
+border:1px solid rgb(79, 114, 124);}
+
+#jc3{background-color: rgb(000, 200, 255);
+border:1px solid rgb(000, 200, 255);}
+
+#jc4{background-color: rgb(158,186,166);
+border:1px solid rgb(158,186,166);}
+
+#jc5{background-color: rgb(216, 0, 78);
+border:1px solid rgb(216, 0, 78);}
+
+#jc6{background-color: rgb(245, 136, 31);
+border:1px solid rgb(245, 136, 31);}
+
+#jc7{background-color: rgb(46, 93, 104);
+border:1px solid rgb(46, 93, 104);}
+
+#jcfontsample{font-family:bloc ;
+			font-size: 14px}
+#jcfontsample2{font-family: helv;
+			font-size: 17px}
+#jcfontsample3{font-family: uk;
+			font-size: 18px}
+
+.jcaswork {
+    margin-top: 30%;
+    width: 100%;
+}
+
+#jcasbott{background-color:#FF2616;}

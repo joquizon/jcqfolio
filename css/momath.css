@@ -1,0 +1,40 @@
+@font-face {font-family: fk;
+			src:url(futurakoyu.ttf) ; }	
+
+@font-face {font-family: fe;
+			src:url(futuraextended.ttf) ; }	
+
+.workbody{
+	height:1500px;
+}
+
+#momath1{background-color: rgb(232,35,39)}
+#momath2{background-color: rgb(238,63,36)}
+#momath3{background-color: rgb(242,108,35)}
+#momath4{background-color: rgb(236,192,28)}
+#momath5{background-color: rgb(233,230,29)}
+#momath6{background-color: rgb(188,213,48)}
+#momath7{background-color: rgb(73,182,73)}
+#momath8{background-color: rgb(16,154,170)}
+#momath9{background-color: rgb(46,48,125)}
+#momath10{background-color: rgb(100,47,142)}
+#momath11{background-color: rgb(135,44,141)}
+#momath12{background-color: rgb(202,27,120)}
+
+#momathfontsample{font-family: fk;
+		font-size:15px;
+}
+
+#momathfontsample2{font-family: fe;
+		font-size:15px;
+}
+
+.momathwork {
+    width: 86%;
+    display: block;
+    margin-top: 25%;
+    margin-left: 7%;
+}
+
+
+#momathbott{background-color:#FF2616;}

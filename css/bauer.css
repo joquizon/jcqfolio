@@ -1,0 +1,34 @@
+@font-face{font-family: hvreg;
+		src:url(helvreg.otf);}
+
+@font-face{font-family:sjers;
+		src:url(sportsjersey.ttf);}
+
+.workbodyjack{
+	height:1500px;
+}		
+
+#bauer1{background-color: rgb(255,170,0) }
+#bauer2{background-color: rgb(38,141,165) }
+#bauer3{background-color: rgb(167,144,91) }
+#bauer4{background-color: rgb(39,150,100) }
+#bauer5{background-color: rgb(110,220,183) }
+#bauer6{background-color: rgb(29,74,117) }
+#bauer7{background-color: rgb(91,65,30) }
+#bauer8{background-color: rgb(214,201,41) }
+#bauer9{background-color: rgb(143,55,69) }
+#bauer10{background-color: rgb(0,0,0) }
+
+#bauerfontsample{font-family: sjers;
+				font-size: 20px}
+
+#bauerfontsample2{font-family: hvreg;
+				font-size: 18px}
+
+.bauerworks {
+    width: 90%;
+    margin-top: 30%;
+    margin-left: 5%;
+}
+
+#bauerbott{background-color:#FF2616;}

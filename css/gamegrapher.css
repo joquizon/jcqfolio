@@ -1,0 +1,39 @@
+  @font-face {font-family: nintendo;
+            src:url(nintendo.ttf) ; }
+  @font-face {font-family: smono;
+            src:url(neonavy.ttf) ; }
+
+.workbodygg{height:1500px;}
+
+  #gg1{background-color: rgb(136,255,59)} 
+  #gg2{background-color: rgb(24, 17, 42)} 
+  #gg3{background-color: #212933} 
+  #gg4{background-color: #C3FF40}
+  #gg5{background-color:  #02B27C} 
+  #gg6{background-color: #04BC04} 
+  #gg7{background-color: #00FF79} 
+  
+  #ggfontsample{font-family:nintendo ;
+  	font-size: 20px}
+  #ggfontsample2{font-family: smono;
+  	font-size: 15px}
+
+  .ggwork{width:86%;
+        margin-top: 30%;
+          margin-left:7%;}  
+   #ggbott{background-color:#FF2616;}       
+
+   #gredwork{width:70%;
+margin-left: 15%;}
+
+.ggmob{    width: 30%;
+  display: inline-block;
+    margin-left: 2%;
+  margin-top: 30%}
+.ggmobl{    width: 47%;
+  display: inline-block;
+  margin-top: 30%;
+margin-left: .5%;}
+#ggmoblland{margin-left: 2%}
+  #ggmoblcrt{margin-top:1%;
+    margin-left: 26.5%}

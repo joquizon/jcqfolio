@@ -1,0 +1,112 @@
+@font-face {font-family: ti;
+			src:url(titania.ttf) ; }	
+
+@font-face {font-family: pom;
+			src:url(pomerole.ttf) ; }
+
+@font-face {font-family: tfur;
+			src:url(teamfury.ttf) ; }	
+
+@font-face {font-family: jap;
+			src:url(japan.ttf) ; }		
+
+.workbody2{
+	height:1500px;
+}
+
+#deck1a{border:1px solid #dc0000;
+	background-color:#dc0000;}
+#deck2{border:1px solid #000000;
+	background-color:#000000;}
+#deck3{border:1px solid #000000;}
+
+#deckfontsample{font-family: ti;
+		font-size:15px;
+}
+
+#deckfontsample2{font-family: pom;
+		font-size:17px;
+}
+
+#deckfontsample3{font-family: tfur;
+		font-size:10px;
+}
+
+#deckfontsample4{font-family: jap;
+		font-size:20px;
+}
+
+#deckhold{margin-left:; }
+
+
+
+.deckwork{
+	width:30%;/*
+margin:0 auto;*/
+display: block;
+margin-top: 25%;
+margin-left:3%;}
+#cardgallery{display:inherit;}
+#cardholder {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#cardgallery{width:100%;
+height: 40%;}
+
+.playingcards{
+			cursor:pointer;
+			float:left;
+	    	width:14%;
+			margin-top:10px;
+			margin-left:10px;
+			display: inherit;
+		}
+
+.playingcards1{
+			float:left;
+			opacity:.0;
+	    	width:0%;
+			margin-top:10px;
+			margin-left:10px;
+			display: inherit;
+			z-index:-2;
+		}
+
+#enlarge{display: none;
+	}
+
+#closer{width:2%;
+		cursor:pointer;
+	position:absolute;}
+.playingcards2 {
+    width: 70%;
+    margin-left: 15%;
+}
+
+#boxes {
+    width: 70%;
+    margin-left: 15%;
+    display: inherit;
+}
+
+#forw{
+			}
+
+#backw{
+			}
+.cardarrow {position:absolute;
+			margin-left: 3px;cursor: pointer;
+			width:2%;margin-top: 3%}
+
+.cardarrow1 {position:absolute;
+			margin-left: 3px;cursor: pointer;
+			width:2%;margin-top: 5%}
+
+#decklogo {
+    width: 40%;
+    margin-left: 30%;
+}
+
+#deckbott{background-color:#FF2616;}

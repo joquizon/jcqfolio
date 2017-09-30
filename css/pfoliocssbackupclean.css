@@ -1,0 +1,931 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: subcl;
+  src: url(cooperhewittlight.otf);
+}
+
+
+/*project font listing*/
+
+@font-face {
+  font-family: cdl;
+  src: url(codelight.otf);
+}
+
+
+/*body{background-color: gray
+            }*/
+
+#home {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: inherit;
+  overflow: hidden;
+}
+
+.lander {
+  float: left;
+  background-color: white;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+#title {
+  width: 700px;
+  font-family: subcl;
+  font-size: 200%;
+  margin-left: 0;
+}
+
+#titlelogo {
+  width: 8%;
+  margin-left: 46%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.redder {
+  color: #FF2616;
+}
+
+#holdermain {
+  float: left;
+  position: fixed;
+  z-index: 50;
+  -webkit-transition: margin-top 1s, margin-left 1s;
+  /* Safari */
+  transition: margin-top 1s, margin-left 1s;
+}
+
+#holdermainfirst {
+  width: 8%;
+  margin-top: 14%;
+  margin-left: 46%;
+  -webkit-transition: margin-top 1s, margin-left 1s;
+  /* Safari */
+  transition: margin-top 1s, margin-left 1s;
+}
+
+.foshow {
+  display: block;
+  width: 26%;
+  margin-left: 37%;
+  margin-top: 10%;
+  -webkit-transition: width 1s, margin 1s;
+  /* Safari */
+  transition: width 1s, margin 1s;
+}
+
+.foshow1 {
+  display: block;
+  width: 27%;
+  margin: 14%;
+  -webkit-transition: width 1s, margin 1s;
+  /* Safari */
+  transition: width 1s, margin 1s;
+}
+
+.noshow {
+  display: block;
+  width: 0%;
+  margin: -10%;
+  -webkit-transition: width 1s, margin 1s;
+  /* Safari */
+  transition: width 1s, margin 1s;
+}
+
+.noshow1 {
+  cursor: pointer;
+  width: 50%;
+  margin-left: 25%;
+  -webkit-transition: width 1s, margin 1s;
+  /* Safari */
+  transition: width 1s, margin 1s;
+}
+
+.lfoshow {
+  height: 40%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 9%;
+  -webkit-transition: width 1s, margin 1s;
+  /* Safari */
+  transition: width 1s, margin 1s;
+}
+
+#logo {
+  height: 40%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 9%;
+}
+
+#resume {
+  margin-top: 5%;
+}
+
+#contact {}
+
+.drop {
+  cursor: pointer;
+  display: block;
+  width: 26%;
+  margin-top: 12%;
+  margin-left: 37%;
+  -webkit-filter: invert(100%);
+  /* Chrome, Safari, Opera */
+  filter: invert(100%);
+  -webkit-transition: transform .4s;
+  /* Safari */
+  transition: transform .4s;
+}
+
+.dropA {
+  cursor: pointer;
+  display: block;
+  width: 26%;
+  margin-top: 12%;
+  margin-left: 37%;
+  z-index: -15;
+  -webkit-filter: invert(0%);
+  /* Chrome, Safari, Opera */
+  filter: invert(0%);
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari */
+  transform: rotate(-90deg);
+  /* Standard syntax */
+  -webkit-transition: transform .4s;
+  /* Safari */
+  transition: transform .4s;
+}
+
+.dropB {
+  cursor: pointer;
+  display: block;
+  width: 26%;
+  margin-top: 12%;
+  margin-left: 37%;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari */
+  transform: rotate(-90deg);
+  /* Standard syntax */
+  -webkit-transition: transform .4s;
+  /* Safari */
+  transition: transform .4s;
+}
+
+#mainthumb {
+  display: inline-block;
+  margin-top: 15%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(115, 115, 115);
+  font-style: italic;
+}
+
+.squarethumbs {
+  width: 30%;
+  display: inline-block;
+  -webkit-transition: width .5s;
+  /* Safari */
+  transition: width .5s;
+}
+
+.squarethumbsA {
+  width: 33%;
+  display: inline-block;
+  -webkit-transition: width .5s;
+  /* Safari */
+  transition: width .5s;
+}
+
+.subthumbs {
+  width: 100%;
+  /* margin-left: 23%; */
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.subthumbsA {
+  width: 120%;
+  /* margin-left: 23%; */
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.subholderA {
+  display: inline-block;
+  margin-left: 2px
+}
+
+.box1 {
+  height: 100px;
+  cursor: pointer;
+}
+
+.box2 {
+  display: none;
+  height: 100px;
+  cursor: pointer;
+}
+
+.box3 {
+  display: none;
+  height: 100px;
+  cursor: pointer;
+}
+
+#titleholder {
+  width: 50%;
+  display: inline-block;
+  margin-left: 25%;
+  margin-top: 2%;
+  overflow: hidden;
+  height: 100%;
+}
+
+.dropdowngallery {
+  margin-top: 170px;
+  position: fixed;
+  z-index: 70;
+  width: 15%;
+  position: fixed;
+  margin-left: -60%;
+  overflow: hidden;
+  height: 60%;
+  -webkit-transition: margin-left .6s;
+  transition: margin-left .6s;
+}
+
+.dropdowngalleryA {
+  margin-top: 170px;
+  position: fixed;
+  z-index: 70;
+  width: 15%;
+  position: fixed;
+  margin-left: 0px;
+  overflow: hidden;
+  height: 60%;
+  -webkit-transition: margin-left .6s;
+  transition: margin-left .6s;
+}
+
+.dropdowngalleryB {
+  margin-top: 170px;
+  position: fixed;
+  z-index: 70;
+  width: 15%;
+  position: fixed;
+  margin-left: 0px;
+  overflow: hidden;
+  height: 60%;
+  -webkit-transition: margin-left .6s;
+  transition: margin-left .6s;
+}
+
+.ddbox1 {
+  height: 50px;
+  cursor: pointer;
+}
+
+.ddbox2 {
+  display: none;
+  height: 50px;
+  cursor: pointer;
+}
+
+.ddbox3 {
+  display: none;
+  height: 50px;
+  cursor: pointer;
+}
+
+.subgallery {
+  display: inline-block;
+  overflow: hidden;
+  width: 48%;
+}
+
+#thumbholder {
+  width: 92%;
+  margin-left: 8%;
+}
+
+#title {
+  width: 47%;
+  font-family: subcl;
+  font-size: 200%;
+  margin-left: 27%;
+  text-align: center;
+}
+
+.infoholder {
+  width: 100%;
+  display: inline-block;
+  margin-top: 15%;
+  overflow: hidden;
+}
+
+.projecttitle {
+  font-family: subcl;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.projectdescription {
+  font-family: subcl;
+  font-size: 15px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.rolesoftware {
+  font-family: subcl;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.context {
+  font-size: 15px
+}
+
+.contextinfo {
+  font-size: 20px;
+  color: #FF2616;
+}
+
+.rolesofttitle {
+  color: #FF2616;
+}
+
+.todo {
+  color: #FF2616;
+}
+
+.didwhat {
+  color: black;
+}
+
+.paletteholder {
+  margin-left: auto;
+  width: 50%;
+  margin-right: auto;
+}
+
+#palette {
+  color: #FF2616;
+}
+
+.palettebox {
+  height: 25px;
+  width: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  border-radius: 52px;
+}
+
+#fontlist {
+  color: black;
+}
+
+.fontq {
+  color: #FF2616;
+}
+
+.workholder {
+  display: inline-block;
+  width: 50%;
+  height: inherit;
+  margin-left: 25%;
+  margin-top: 5%;
+  -webkit-transition: margin-top 1s;
+  /* Safari */
+  transition: margin-top 1s;
+}
+
+.workholdermain {
+  display: inline-block;
+  width: 60%;
+  margin-left: -200%;
+  margin-top: 10%;
+  -webkit-transition: margin-top 1s;
+  /* Safari */
+  transition: margin-top 1s;
+}
+
+.workholdermain1 {
+  display: inline-block;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 10%;
+  -webkit-transition: margin-left 1s;
+  /* Safari */
+  transition: margin-left 1s;
+}
+
+.pagebott {
+  margin-top: 16%;
+  bottom: 0px;
+  height: 10%;
+}
+
+.pagebottL {
+  margin-top: 16%;
+  bottom: 0px;
+  height: 10%;
+}
+
+.pagebott1 {
+  margin-top: 10%;
+  bottom: 0px;
+  height: 16%;
+}
+
+.pagebott1L {
+  margin-top: 10%;
+  bottom: 0px;
+  height: 37%;
+}
+
+#pagebottind {
+  bottom: 0px;
+  height: 5%;
+}
+
+#for {
+  position: fixed;
+  right: 5px;
+  bottom: -5px;
+}
+
+.navbarbott {
+  width: 14px;
+  height: 55px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: height .25s;
+  /* Safari */
+  transition: height .25s;
+}
+
+.navbarbottA {
+  width: 14px;
+  height: 65px;
+  background-color: black;
+  display: inline-block;
+  margin-left: 4px;
+  cursor: pointer;
+  -webkit-transition: height .25s;
+  /* Safari */
+  transition: height .25s;
+}
+
+#plus {
+  width: 100%;
+  height: 100%;
+}
+
+.plus1 {
+  width: 1%;
+  height: 28%;
+  cursor: pointer;
+  margin-left: 50%;
+  background-color: #4D4D4D;
+  border: 1px solid #4D4D4D;
+  border-radius: 0px;
+  -ms-transform: rotate(-90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-90deg);
+  /* Safari */
+  transform: rotate(-90deg);
+  /* Standard syntax */
+  -webkit-transition: transform 1s, width 2s, height2s;
+  /* Safari */
+  transition: transform 1s, width 2s, height2s;
+}
+
+.plus1A {
+  width: 2%;
+  height: 2%;
+  cursor: pointer;
+  margin-left: 49%;
+  background-color: #FFFFFF;
+  border: 1px solid #4D4D4D;
+  margin-bottom: 5%;
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  transform: rotate(90deg);
+  /* Standard syntax */
+  -webkit-transition: transform 1s, width 2s, height2s;
+  /* Safari */
+  transition: transform 1s, width 2s, height2s;
+}
+
+.extras {
+  height: 0%;
+  overflow: hidden;
+  margin-bottom: 10%;
+  -webkit-transition: height 1s;
+  transition: height .4s;
+}
+
+.extras1 {
+  height: 100%;
+  margin-bottom: 10%;
+  -webkit-transition: height 1s;
+  transition: height .4s;
+}
+
+#bott1 {
+  height: 50px;
+}
+
+.infoboss {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*portrait   >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 600px)and (max-height: 960px) {
+  .dropdowngalleryB {
+    display: none
+  }
+  .workholder {
+    width: 80%;
+    margin-left: 10%;
+  }
+  #holdermainfirst {
+    width: 24%;
+    margin-left: 38%;
+    margin-top: 50%;
+  }
+  #titleholder {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 6%;
+    overflow: hidden;
+    height: 100%;
+  }
+  #title {
+    width: 70%;
+    font-size: 180%;
+    margin-left: 15%;
+  }
+  .workholdermain {
+    width: 60%;
+    margin-top: 50%;
+    margin-left: -120%;
+    transition: margin-left 1s;
+  }
+  .workholdermain1 {
+    width: 70%;
+    margin-top: 40%;
+    margin-left: 13%;
+    transition: margin-left 1s;
+  }
+  .squarethumbs {
+    width: 49%;
+  }
+  .infoboss {
+    width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .infoholder {
+    margin-top: 35%
+  }
+  #nikevid {
+    width: 62%;
+    height: 8%;
+    margin-top: 50%;
+    margin-left: 19%;
+  }
+  .nikethumbs {
+    width: 98%;
+    margin-top: 25%;
+    margin-left: 1%;
+  }
+  #boxes {
+    width: 90%;
+    margin-left: 5%;
+    display: inherit;
+    margin-top: 40%
+  }
+  .playingcards {
+    width: 22%;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .playingcards2 {
+    width: 98%;
+    margin-left: 1%;
+  }
+  #closer {
+    margin-left: 49%;
+    width: 7%;
+    cursor: pointer;
+  }
+  .cardarrow {
+    margin-left: 35%;
+    cursor: pointer;
+    width: 7%;
+    margin-top: 0%;
+  }
+  .cardarrow1 {
+    margin-left: 14%;
+    cursor: pointer;
+    width: 7%;
+    margin-top: 0%;
+  }
+  #decklogo {
+    width: 74%;
+    margin-left: 13%;
+    margin-top: 50%;
+  }
+  .seasaltworkrub {
+    width: 80%;
+    /* margin: 0 auto; */
+    display: block;
+    margin-top: 25%;
+    margin-left: 10%;
+  }
+  .bauerworks {
+    width: 98%;
+    margin-top: 30%;
+    margin-left: 1%;
+  }
+  .momathwork {
+    width: 98%;
+    display: block;
+    margin-top: 50%;
+    margin-left: 1%;
+  }
+  .dropB {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    -ms-transform: rotate(0deg);
+    /* IE 9 */
+    -webkit-transform: rotate(0deg);
+    /* Safari */
+    transform: rotate(0deg);
+    /* Standard syntax */
+    -webkit-transition: transform .4s;
+    /* Safari */
+    transition: transform .4s;
+  }
+  .dropdowngallery {
+    margin-top: 173px;
+    width: 50%;
+    height: 0%;
+  }
+  .dropdowngalleryA {
+    margin-top: 173px;
+    width: 50%;
+    height: 90%;
+  }
+  .subthumbs {
+    margin-left: 6%;
+  }
+  .foshow {
+    margin: 10%;
+  }
+  #logo {
+    margin-left: 2%;
+  }
+  .lfoshow {
+    margin-left: 2%;
+  }
+  .dropA {
+    margin: 10%;
+  }
+  .drop {
+    margin: 10%;
+  }
+  .dropB {
+    margin: 10%;
+  }
+  .navbarbott {
+    width: 10px;
+    height: 30px;
+    margin-left: 15px;
+  }
+}
+
+
+/*/*land screen>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media screen and (max-width: 640px)and (max-height: 360px) {
+  #titleholder {
+    margin-top: 0%;
+  }
+}
+
+.dropB {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+  /* Safari */
+  transform: rotate(0deg);
+  /* Standard syntax */
+  -webkit-transition: transform .4s;
+  /* Safari */
+  transition: transform .4s;
+}
+
+.dropdowngalleryB {
+  display: none
+}
+
+.dropdowngallery {
+  width: 16%;
+}
+
+.dropdowngalleryA {
+  width: 16%;
+}
+
+.subgallery {
+  width: 48%;
+}
+
+.infoholder {
+  margin-top: 8%
+}
+
+.navbarbott {
+  width: 10px;
+  height: 30px;
+  margin-left: 12px;
+}
+
+.pagebott1 {
+  height: 16%;
+}
+
+
+}
