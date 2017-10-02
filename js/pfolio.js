@@ -3,34 +3,28 @@ $(document).ready(function() {
       
       
 
-$("#logo1").click(function()
-{
-$("#titleholder").hide();
-    $(".noshow2").attr("class","foshow2");
-      $(".noshow1").attr("class","lfoshow");
-      $("#holdermainfirst").attr("id","holdermain1")
-      $(".workholdermain").attr("class","workholdermain1");
-      $("#for1").show();
-});
+// $("#logo1").click(function()
+// {
+// $("#titleholder").hide();
+//     $(".noshow2").attr("class","foshow2");
+//       $(".noshow1").attr("class","lfoshow");
+//       $("#holdermainfirst").attr("id","holdermain1")
+//       $(".workholdermain").attr("class","workholdermain1");
+//       $("#for1").show();
+// });
 
 $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 100) 
   {
-    $("#titleholder").hide();
+
     $(".noshow2").attr("class","foshow2");
-      $(".noshow1").attr("class","lfoshow");
-      $("#holdermainfirst").attr("id","holdermain1")
-      $(".workholdermain").attr("class","workholdermain1");
       $("#for1").show();
   }
   else
     {
       $("#titleholder").show();
     $(".foshow2").attr("class","noshow2");
-      $(".lfoshow").attr("class","noshow1");
-      $("#holdermain1").attr("id","holdermainfirst")
-      $(".workholdermain1").attr("class","workholdermain");
       $("#for1").hide();
     };
 
