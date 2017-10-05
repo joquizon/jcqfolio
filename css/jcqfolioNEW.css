@@ -1,4 +1,4 @@
-body{    background-color: rgb(255,255,200);}
+body{    background-color: rgb(255,255,255);}
 #logohold {
 
     margin-top: 0;
@@ -18,7 +18,7 @@ body{    background-color: rgb(255,255,200);}
    
     width: 100%;
     font-family: subcl;
-    font-size: .95vw;
+    font-size: 1vw;
     text-align: center;
     color: black;
     margin-top: 1%;
@@ -26,13 +26,13 @@ body{    background-color: rgb(255,255,200);}
     line-height: 1.5vw;
 }
 
-#titleholder {width: 16%;
+#titleholder {width: 17%;
     display: inline-block;
     margin-left: 42%;
     margin-top: 7%;
     overflow: hidden;}
 
-#logo{width:1.45vw;
+#logo{width:1.3vw;
     float: left;
     margin-top: 1%;}
 
@@ -47,32 +47,40 @@ font-family: subcl;
 cursor:pointer;}
 
 .skillsmodalA{
-    color: darkslategray;
-    text-align: left;
-    font-family: subcl;
-    font-size: .8vw;
-    position: fixed;
     margin-left: -30%;
+    color: #ffffc8;
+    text-align: left;
+    font-family: arial;
+    font-size: .9vw;
+    position: fixed;
     margin-top: 3%;
-    -webkit-transition: margin-top 1s, margin-left .5s; /* Safari */
-    transition: margin-top .5s, margin-left .5s; 
+    -webkit-transition: margin-top .5s, margin-left .5s;
+    transition: margin-top .5s, margin-left .5s;
+    background-color: rgba(0,0,0,.9);
+    padding: .5vw;
 }   
 
 .skillsmodal{
-    color: darkslategray;
+    color: #ffffc8;
     text-align: left;
-    font-family: subcl;
-    font-size: .8vw;
+    font-family: arial;
+    font-size: .9vw;
     position: fixed;
     margin-left: 1%;
     margin-top: 3%;
-    -webkit-transition: margin-top .5s, margin-left .5s; /* Safari */
-    transition: margin-top .5s, margin-left .5s;     
+    -webkit-transition: margin-top .5s, margin-left .5s;
+    transition: margin-top .5s, margin-left .5s;
+    background-color: rgba(0,0,0,.9);
+    padding: .5vw;     
 }    
 
 #skillsttl{    color: red;}
 
 #workhold{margin-top: 6.5%;}
+
+
+
+/*workgrid will turn into one class just set up this way to change colors*/
 
 .workgrid{width: calc(100%/10);
     background-color: gray;
@@ -139,6 +147,7 @@ cursor:pointer;}
     height:34vw;
     width:100%;
     margin-top:6.5%;
+    padding-bottom: 25%;
 display:none;}
 
 .gallerybuttons{width: 1.25vw;
@@ -156,3 +165,11 @@ display:none;}
     margin-left: 47%;
     position: fixed;
     bottom: 2%;}    
+
+
+
+.gridimg{width:100%;
+height: inherit;}
+#imghold{width:50%;
+    margin-left:25%;
+    height: inherit;}
