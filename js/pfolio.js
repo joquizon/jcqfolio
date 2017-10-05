@@ -7,7 +7,7 @@ console.log ("operational");
       }); 
 
 
-var id = event.target.id;
+
 
 
 
@@ -91,10 +91,11 @@ $("#imghold").attr("src","images/galleryfolder/"+targID+".jpg");
 $(".gallerybuttonsF").click(function()
   {
     var t =(event.target.id)
-    var next= workholdgrid[($.inArray(t,workholdgrid)+1) % workholdgrid.length]
+    var next= workholdgrid[($.inArray(t,workholdgrid)+1)% workholdgrid.length]
     $("#imghold").attr("src","images/galleryfolder/"+next+".jpg");
-    $(this).attr("id",next);
+
     $(".gallerybuttonsB").attr("id",next);
+    $(".gallerybuttonsF").attr("id",next);
 
   });
 
@@ -102,10 +103,11 @@ $(".gallerybuttonsF").click(function()
 $(".gallerybuttonsB").click(function()
   {
     var t =(event.target.id)
-    var next= workholdgrid[($.inArray(t,workholdgrid)-1 + workholdgrid.length)% workholdgrid.length]
+    var next= workholdgrid[($.inArray(t,workholdgrid)-1+ workholdgrid.length) % workholdgrid.length]
     $("#imghold").attr("src","images/galleryfolder/"+next+".jpg");
-    $(this).attr("id",next);
+
     $(".gallerybuttonsF").attr("id",next);
+    $(".gallerybuttonsB").attr("id",next);    
 
   });
 
