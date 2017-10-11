@@ -152,19 +152,27 @@ transition: left .5s;
 /*_____________Home grid of work______*/
     .workhold{margin-top: 3%;
     width:100%;
-    -webkit-transition:
+    -webkit-transition: width 1s, height 1s,
     margin-left .5s;
-    transition:
+    transition: width 1s, height 1s,
     margin-left .5s;}
 
     .workholdA{margin-top: 3%;
     width:100%;
     margin-left: 5%;
-    -webkit-transition:
+    -webkit-transition: width 1s, height 1s,
     margin-left .5s;
-    ransition:
+    transition: width 1s, height 1s,
     margin-left .5s;}
 
+    .workholdB{margin-top: 3%;
+        font-size: 0;
+    width:0%;
+    margin-left: 5%;
+    -webkit-transition: width 1s, height 1s,
+    margin-left .5s;
+    transition: width 1s, height 1s,
+    margin-left .5s;}
 
     .workgrid{
     font-size: 0.8vw;
@@ -177,7 +185,28 @@ transition: left .5s;
         cursor: pointer;
         font-family: subcl;
         text-align: center;
-    letter-spacing: .05vw;}
+    letter-spacing: .05vw;
+        -webkit-transition: height .5s,
+    width .5s;
+    transition: height .5s,
+    width .5s;}
+
+    .workgridA{
+    font-size: 0.8vw;
+        width: 0%;
+        margin-left: calc(50%/6);
+        margin-top: 5%;
+        background-color: gray;
+        height: .1vw;
+        float: left;
+        cursor: pointer;
+        font-family: subcl;
+        text-align: center;
+    letter-spacing: .05vw;
+        -webkit-transition: height .5s,
+    width .5s;
+    transition: height .5s,
+    width .5s;}
 
 /*__________Work display modals_______*/
 
