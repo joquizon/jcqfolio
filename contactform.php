@@ -16,13 +16,13 @@
 					}
 					if (!$_POST['email']!=" " AND !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 					{
-						$error.="<p>PLEASE ENTER VALID EMAIL ADDRESS</p>";
+						$error.="<p class='messages'>PLEASE ENTER VALID EMAIL ADDRESS</p>";
 					} 
 					if($error){
-						$result='<p>there is a problem'.$error."</p>";
+						$result="<p class='messages'>there is a problem".$error."</p>";
 					}else{
 						mail($emailTO,$subject,$body, $headers);
-						echo"<p class='messages'>EMAIL SENT on".date('l')." ".date('m/d/Y')." at ".date("h:i")."</p>";
+						$result="<p class='messages2'>EMAIL SENT on ".date('l')." ".date('m/d/Y')." at ".date("h:i")."</p>";
 					
 						};
 
@@ -39,36 +39,34 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jcqfolioNEW.css">
 
 	<style>
-		.form{background-color: gray;
-			color:white;
-			width:15%;
-			height:5vw;}
-		.button{width:8%;
-			background-color: green;
-			height:2.5vw;}
+
 	</style>
 
 
 	</head>
 
 		<body>
-			<p>
-				Contact Form
-			</p>
-			<form method="post">	
-					<?php echo $result; ?>
+			<div id="maincarrier">
+				<p>
+					CONTACT <span>FORM</span>
+				</p>
+				<form method="post">	
+				<?php echo $result; ?>
 
-			<div>
-				<input class="form" type="text" name ="email" placeholder="Your Email"value="<?php echo $_POST['email'] ?>"><br>	
-				<input class="form" type="text" name ="subject" placeholder="Subject"value="<?php echo $_POST['subject'] ?>"><br>		
-				<input class="form" type="text" name ="body" placeholder="Your Message"value="<?php echo $_POST['body'] ?>">
-			</div>
+				<div>
+					<input class="form" type="text" name ="email" placeholder="Your Email"value="<?php echo $_POST['email'] ?>"><br>	
+					<input class="form" type="text" name ="subject" placeholder="Subject"value="<?php echo $_POST['subject'] ?>"><br>		
+		
+					<textarea id="messagebox"class="form" name="body"><?php echo $_POST['body'];?></textarea>
+				</div>
 
-			<input id="submit" type="submit" name="submit" class="button" value="submit"/>
-			
-			</form>
+
+				<input id="submit" type="submit" name="submit" class="button" value="SEND"/>
+				
+				</form>
 
 	<script>
 
