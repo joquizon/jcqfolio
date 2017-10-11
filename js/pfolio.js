@@ -11,7 +11,7 @@ console.log ("operational");
 
 $(".workgrid").click(function()
   {
-    $(".workhold").hide();
+    // $(".workhold").hide();
 // workholdgrid is the name of the imagefiles
 
 var targID = event.target.id;
@@ -26,7 +26,7 @@ $("#imghold").attr("src","images/galleryfolder/"+targID+".jpg");
 
 $("#logohold").attr("id","logoholdA");
 $("#titleholder").attr("id","titleholderA");
-
+$(".workhold").attr("class","workholdB");
   });
 
 
