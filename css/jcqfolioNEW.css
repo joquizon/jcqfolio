@@ -63,7 +63,7 @@
 
 
 a{ text-decoration: none}
-
+body{overflow:hidden }
 
 /*_________________title______________*/
     #titleholder {
@@ -77,6 +77,7 @@ a{ text-decoration: none}
         left .5s
             }
         #titleholderA {
+        z-index: 100;
         position: fixed;
         left: .5%;
         bottom: 5%;
@@ -152,26 +153,25 @@ a{ text-decoration: none}
 /*_____________Home grid of work______*/
     .workhold{margin-top: 3%;
     width:100%;
-    -webkit-transition: width 1s, height 1s,
+    -webkit-transition: width .3s, height .3s,
     margin-left .5s;
-    transition: width 1s, height 1s,
+    transition: width .3s, height .3s,
     margin-left .5s;}
 
     .workholdA{margin-top: 3%;
     width:100%;
     margin-left: 5%;
-    -webkit-transition: width 1s, height 1s,
+    -webkit-transition: width .3s, height .3s,
     margin-left .5s;
-    transition: width 1s, height 1s,
+    transition: width .3s, height .3s,
     margin-left .5s;}
 
-    .workholdB{margin-top: 3%;
-        font-size: 0;
-    width:0%;
-    margin-left: 5%;
-    -webkit-transition: width 1s, height 1s,
+    .workholdB{margin-top: 0%;
+    width:100%;
+    margin-left: 200%;
+    -webkit-transition: width .3s, height .3s,
     margin-left .5s;
-    transition: width 1s, height 1s,
+    transition: width .3s, height .3s,
     margin-left .5s;}
 
     .workgrid{
@@ -235,10 +235,46 @@ a{ text-decoration: none}
         font-size: 1vw;}
 
         .workactual{height: 47vw;
-            display: none;
+            margin-top: -47vw;
+            display:none
+
+            ;
             width: 82.5%;
-            background-color: red;
-            float: right;}
+            background-color: gray;
+            margin-left: 18.5%;
+            -webkit-transition: width .3s, height .3s,
+            margin-top .5s;
+            transition: width .3s, height .3s,
+            margin-top .5s;}
+
+        .workactualB{position: fixed;
+                overflow-y: scroll;
+                height: 52vw;
+                display: none;
+                margin-top: 0%;
+                width: 82.5%;
+                /* background-color: gray; */
+                margin-left: 18.5%;
+                -webkit-transition: width .3s, height .3s,
+             margin-top .5s;
+                transition: width .3s, height .3s,
+             margin-top .5s;}
+
+/*__________MOMATH GALLERY DISPLAY_______*/
+        .momathgrid{    width: 22%;
+            margin: 1%;
+            cursor: pointer;}
+        .momathslider{width: 50%;
+             margin-left: 25%;
+             margin-top: 18%;
+             margin-bottom: 18%;
+            pointer-events:none;}
+
+        #topimage{display:none;
+            margin-top: 8%;}
+
+
+
 
 /*__________contact form_______________*/
 
@@ -311,6 +347,7 @@ a{ text-decoration: none}
     box-shadow: none;}
 
     #messagebox{    width: 50%;
+    text-align: left;
     height: 14vw;
     border: none;
     background-color: rgb(240, 240, 240);
