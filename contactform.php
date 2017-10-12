@@ -9,17 +9,17 @@
 					$headers=$_POST['email'];
 
 					if(!$_POST['email']){
-						$error.= "<p class='messages'>Please enter your Email so i can contact you!</p>";
+						$error.= "<p class='messages'>Please include an Email address.</p>";
 					}
 					if(!$_POST['body']){
-						$error.= "<p class='messages'>Please enter a message so we have something to talk about.Email NOT sent!!!</p>";
+						$error.= "<p class='messages'>Please Leave a Message.</p>";
 					}
 					if (!$_POST['email']!=" " AND !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
 					{
 						$error.="<p class='messages'>PLEASE ENTER VALID EMAIL ADDRESS</p>";
 					} 
 					if($error){
-						$result="<p class='messages'>there is a problem".$error."</p>";
+						$result="<p class='messages'>ERROR ".$error."</p>";
 					}else{
 						mail($emailTO,$subject,$body, $headers);
 						$result="<p class='messages2'>EMAIL SENT on ".date('l')." ".date('m/d/Y')." at ".date("h:i")."</p>";
@@ -27,7 +27,7 @@
 						};
 
 
-	}
+	} 
 ?>
 
 <!doctype html>
