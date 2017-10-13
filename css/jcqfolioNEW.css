@@ -70,11 +70,12 @@ body{overflow:hidden }
         position: fixed;
         left: calc(50%/6);
         bottom: 5%;
+        cursor:pointer;
         overflow: hidden;
         -webkit-transition:
         left .5s
         transition:
-        left .5s
+        left .5s;
             }
         #titleholderA {
         z-index: 100;
@@ -153,10 +154,11 @@ body{overflow:hidden }
 /*_____________Home grid of work______*/
     .workhold{margin-top: 3%;
     width:100%;
+    margin-left: 0%;
     -webkit-transition: width .3s, height .3s,
-    margin-left .5s;
+    margin-left .5s, margin-top 1s;
     transition: width .3s, height .3s,
-    margin-left .5s;}
+    margin-left .5s, margin-top 1s;}
 
     .workholdA{margin-top: 3%;
     width:100%;
@@ -166,13 +168,13 @@ body{overflow:hidden }
     transition: width .3s, height .3s,
     margin-left .5s;}
 
-    .workholdB{margin-top: 0%;
+    .workholdB{margin-top: 200%;
     width:100%;
-    margin-left: 200%;
+    margin-left:0%;
     -webkit-transition: width .3s, height .3s,
-    margin-left .5s;
+    margin-left .5s, margin-top 1s;
     transition: width .3s, height .3s,
-    margin-left .5s;}
+    margin-left .5s, margin-top 1s;}
 
     .workgrid{
     font-size: 0.8vw;
@@ -209,18 +211,27 @@ body{overflow:hidden }
     width .5s;}
 
 /*__________Work display modals_______*/
+        
+        #backtogrid{width: 2%;
+        right: 1%;
+        position: fixed;
+        top: 0%;
+        cursor:pointer;
+        display:none;
+        z-index: 1000;}
 
         .infopanel{/*background-color: blue;*/
         width: 17.5%;
         height: 17vw;
         display: none;
         position: fixed;
-        margin-top: 15%;
+        margin-top: -100%;
             -webkit-transition: opacity .5s;
         transition: opacity .5s;
         padding:.5%;
         font-family: subcl;
         font-size: 1vw;}
+
         .infopanelA{/*background-color: blue;*/
         width: 17.5%;
         height: 17vw;
@@ -235,40 +246,58 @@ body{overflow:hidden }
         font-size: 1vw;}
 
         .workactual{height: 47vw;
-            margin-top: -47vw;
-            display:none
-
-            ;
+            position:fixed;
+            margin-top: -100%;
+            display:none;
             width: 82.5%;
-            background-color: gray;
             margin-left: 18.5%;
-            -webkit-transition: width .3s, height .3s,
+            -webkit-transition: width .5s, height .5s,
             margin-top .5s;
-            transition: width .3s, height .3s,
+            transition: width .5s, height .5s,
             margin-top .5s;}
 
-        .workactualB{position: fixed;
+        .workactualB{
                 overflow-y: scroll;
                 height: 52vw;
                 display: none;
                 margin-top: 0%;
                 width: 82.5%;
-                /* background-color: gray; */
                 margin-left: 18.5%;
-                -webkit-transition: width .3s, height .3s,
+                -webkit-transition: width .5s, height .5s,
              margin-top .5s;
-                transition: width .3s, height .3s,
+                transition: width .5s, height .5s,
              margin-top .5s;}
 
 /*__________MOMATH GALLERY DISPLAY_______*/
-        .momathgrid{    width: 22%;
+        .momathgrid{width: 22%;
             margin: 1%;
-            cursor: pointer;}
+            cursor: pointer;
+                -webkit-transition: width .5s, height .5s,
+             margin-top .5s;
+                transition: width .5s, height .5s,
+             margin-top .5s;            }
+
         .momathslider{width: 50%;
              margin-left: 25%;
              margin-top: 18%;
              margin-bottom: 18%;
-            pointer-events:none;}
+            pointer-events:none;
+                -webkit-transition: width .5s, height .5s,
+             margin-top .5s;
+                transition: width .5s, height .5s,
+             margin-top .5s;
+        }
+
+        .topslide{width: 50%;
+             margin-left: 25%;
+             margin-top: 8%;
+             margin-bottom: 18%;
+            pointer-events:none;
+                -webkit-transition: width .5s, height .5s,
+             margin-top .5s;
+                transition: width .5s, height .5s,
+             margin-top .5s;
+        }
 
         #topimage{display:none;
             margin-top: 8%;}
