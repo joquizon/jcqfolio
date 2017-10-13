@@ -1,6 +1,6 @@
 $(document).ready(function() {
 console.log ("operational");
-      
+// _____________show skills tab__________________ 
    $("#skills").click(function()
       {
         $(".skillsmodalA").toggleClass("skillsmodal");
@@ -8,42 +8,64 @@ console.log ("operational");
         $(".infopanel").toggleClass("infopanelA");
       }); 
 
+// _____________show specific work gallery_______
+    $(".workgrid").click(function()
+      {
+              // $(".workhold").hide();
+          // workholdgrid is the name of the imagefiles
 
-$(".workgrid").click(function()
-  {
-    // $(".workhold").hide();
-// workholdgrid is the name of the imagefiles
-
-var targID = event.target.id;
-var MtargID = targID + "DIV"
-var ItargID = targID + "INFO"
-
-
-$("#"+MtargID).show()
-$("#"+ItargID).show()
+          var targID = event.target.id;
+          var MtargID = targID + "DIV"
+          var ItargID = targID + "INFO"
 
 
-$("#logohold").attr("id","logoholdA");
-$("#titleholder").attr("id","titleholderA");
-$(".workhold").attr("class","workholdB").delay(600).queue(function() 
-    {
-        $(".workactual").attr("class","workactualB");
-    });
-  });
+          $("#"+MtargID).show();
+          $("#"+ItargID).show();
+
+
+          $("#logohold").attr("id","logoholdA");
+          $("#titleholder").attr("id","titleholderA");
+          $(".workhold").animate({marginLeft: "200%"},500);
+          $(".workactual").animate({marginTop: "0%"},500);
+          $(".infopanel").animate({marginTop: "15%"},500);
+      });
+
+
+// ____________from grid to scroller and back____
+    $(".momathgrid").click(function()
+        {
+          var targID = event.target.id;
+          $("#backtogrid").fadeIn(300);    
+          $(".momathgrid").attr("class","momathslider");
+
+          $("#"+targID).hide();
+
+          $(".topslide").attr("src","images/galleryMOMATH/"+targID+".jpg");
+          $(".topslide").fadeIn(200);
+          $("#topimage").attr("id",targID);      
+        });
+
+
+    $("#backtogrid").click(function()
+        {
+          $(".topslide").hide();
+          $(".momathslider").attr("class","momathgrid");
+          $(".momathgrid").show();  
+          $(this).fadeOut(300);    
+        });
 
 
 
-$(".momathgrid").click(function()
-    {
-      var targID = event.target.id;
-      $(".momathgrid").attr("class","momathslider");
-      $("#"+targID).hide();
-
-      $("#topimage,#bottomimage").attr("src","images/galleryMOMATH/"+targID+".jpg");
-      $("#topimage,#bottomimage").show();
-      $("#topimage,#bottomimage").attr("id",targID);
-    });
-
+// ___________from grid or scroller to home______
+$("#title").click(function()
+{
+  $(".workactual").animate({
+    marginTop: "-100%"},500);
+ $(".workhold").animate({
+    marginLeft: "0%"},500);
+           $(".infopanel").animate({marginTop: "-100%"},500);
+});
+    
 
   // $('#contact').click(function (event) 
   // {
