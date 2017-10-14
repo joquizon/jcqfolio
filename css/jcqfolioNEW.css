@@ -66,9 +66,9 @@ a{ text-decoration: none}
 body{overflow:hidden }
 
 /*_________________title______________*/
-    #titleholder {
+    .titleholder {
         position: fixed;
-        left: calc(50%/6);
+        left: .5%;
         bottom: 5%;
         cursor:pointer;
         overflow: hidden;
@@ -76,9 +76,10 @@ body{overflow:hidden }
         left .5s
         transition:
         left .5s;
+        z-index: 100;
             }
         #titleholderA {
-        z-index: 100;
+
         position: fixed;
         left: .5%;
         bottom: 5%;
@@ -102,12 +103,12 @@ body{overflow:hidden }
 
 /*________icons_______________________*/
     #logohold {
-        width: 5.85vw;
-        position: fixed;
-        left: 32%;
-        bottom: 4.25%;
-        -webkit-transition: margin-top 1s, margin-left 1s, left.5s;
-        transition: margin-top 1s, margin-left 1s, left.5s;}
+    width: 9.85vw;
+    position: fixed;
+    left: 24%;
+    bottom: 4.25%;
+    -webkit-transition: margin-top 1s, margin-left 1s, left.5s;
+    transition: margin-top 1s, margin-left 1s, left.5s;}
 
         #logoholdA {
         width: 5.85vw;
@@ -118,12 +119,11 @@ body{overflow:hidden }
         transition: margin-top 1s, margin-left 1s, left.5s;}
 
 
-    .iconlinks{
-    font-family: subcl;
-        width: 25%;
-        height: 1.75vw;
-        margin-left: 5%;
-    cursor:pointer;}
+    .iconlinks{font-family: subcl;
+    width: 15%;
+    height: 1.75vw;
+    margin-left: 4%;
+    cursor: pointer;}
 /*___________skills modal_____________*/
     .skillsmodalA{
         margin-left: -30%;
@@ -160,6 +160,9 @@ body{overflow:hidden }
     transition: width .3s, height .3s,
     margin-left .5s, margin-top 1s;}
 
+    .gridimg{width:100%;
+        pointer-events:none;}
+    .workgridtitles{pointer-events:none;}
     .workholdA{margin-top: 3%;
     width:100%;
     margin-left: 5%;
@@ -212,13 +215,15 @@ body{overflow:hidden }
 
 /*__________Work display modals_______*/
         
-        #backtogrid{width: 2%;
+       .gridreturn{width: 2%;
         right: 1%;
-        position: fixed;
+        position: absolute;
         top: 0%;
         cursor:pointer;
         display:none;
         z-index: 1000;}
+        #gridretsvg{pointer-events:none;
+            width: 100%;}
 
         .infopanel{/*background-color: blue;*/
         width: 17.5%;
@@ -245,8 +250,9 @@ body{overflow:hidden }
         font-family: subcl;
         font-size: 1vw;}
 
-        .workactual{height: 47vw;
+        .workactual{height: 52vw;
             position:fixed;
+            top:0%;
             margin-top: -100%;
             display:none;
             width: 82.5%;
@@ -254,10 +260,10 @@ body{overflow:hidden }
             -webkit-transition: width .5s, height .5s,
             margin-top .5s;
             transition: width .5s, height .5s,
-            margin-top .5s;}
+            margin-top .5s;      
+            overflow-y: scroll;}
 
         .workactualB{
-                overflow-y: scroll;
                 height: 52vw;
                 display: none;
                 margin-top: 0%;
@@ -269,7 +275,7 @@ body{overflow:hidden }
              margin-top .5s;}
 
 /*__________MOMATH GALLERY DISPLAY_______*/
-        .momathgrid{width: 22%;
+        .momath{width: 22%;
             margin: 1%;
             cursor: pointer;
                 -webkit-transition: width .5s, height .5s,
@@ -277,7 +283,16 @@ body{overflow:hidden }
                 transition: width .5s, height .5s,
              margin-top .5s;            }
 
-        .momathslider{width: 50%;
+        .seasalt{width: 25%;
+            margin: 1%;
+            margin-left: calc(25%/4);
+            cursor: pointer;
+                -webkit-transition: width .5s, height .5s,
+             margin-top .5s;
+                transition: width .5s, height .5s,
+             margin-top .5s;            }     
+
+        .slider{width: 50%;
              margin-left: 25%;
              margin-top: 18%;
              margin-bottom: 18%;
