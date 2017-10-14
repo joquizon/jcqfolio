@@ -1,10 +1,8 @@
 $(document).ready(function() {
 console.log ("operational");
-// _____________show skills tab__________________ 
    $("#skills").click(function()
       {
         $(".skillsmodalA").toggleClass("skillsmodal");
-        $(".workhold").toggleClass("workholdA");
         $(".infopanel").toggleClass("infopanelA");
       }); 
 
@@ -15,16 +13,13 @@ console.log ("operational");
           // workholdgrid is the name of the imagefiles
 
           var targID = event.target.id;
-          var MtargID = targID + "DIV"
-          var ItargID = targID + "INFO"
+          var MtargID = targID + "DIV";
+          var ItargID = targID + "INFO";
 
 
           $("#"+MtargID).show();
           $("#"+ItargID).show();
-
-
-          $("#logohold").attr("id","logoholdA");
-          $("#titleholder").attr("id","titleholderA");
+          $(".titleholder").attr("id",targID);
           $(".workhold").animate({marginLeft: "200%"},500);
           $(".workactual").animate({marginTop: "0%"},500);
           $(".infopanel").animate({marginTop: "15%"},500);
@@ -32,40 +27,52 @@ console.log ("operational");
 
 
 // ____________from grid to scroller and back____
-    $(".momathgrid").click(function()
+    $(".momath,.seasalt").click(function(event)
         {
           var targID = event.target.id;
-          $("#backtogrid").fadeIn(300);    
-          $(".momathgrid").attr("class","momathslider");
-
+          var targCL = event.target.className;
+          $(".gridreturn").fadeIn(300)
+          $(".gridreturn").attr("id",targCL);   
+          $("."+targCL).attr("class","slider");
+          $(".titleholder").attr("id",targCL)
+          $("#slider").show();
           $("#"+targID).hide();
 
-          $(".topslide").attr("src","images/galleryMOMATH/"+targID+".jpg");
+          $(".topslide").attr("src","images/gallery"+targCL+"/"+targID+".jpg");
           $(".topslide").fadeIn(200);
           $("#topimage").attr("id",targID);      
         });
 
 
-    $("#backtogrid").click(function()
+    $(".gridreturn").click(function(event)
         {
+          var targIDE = event.target.id;
           $(".topslide").hide();
-          $(".momathslider").attr("class","momathgrid");
-          $(".momathgrid").show();  
+          $(".slider").attr("class",targIDE);
+          $("."+targIDE).show();  
           $(this).fadeOut(300);    
         });
 
 
 
 // ___________from grid or scroller to home______
-$("#title").click(function()
-{
-  $(".workactual").animate({
-    marginTop: "-100%"},500);
- $(".workhold").animate({
-    marginLeft: "0%"},500);
-           $(".infopanel").animate({marginTop: "-100%"},500);
-});
+          $(".titleholder").click(function()
+          {
+            var targIDE = event.target.id;
+            var MtargIDE = targIDE + "DIV";
+            var ItargIDE = targIDE + "INFO";
+
+            $(".topslide").hide();
+            $(".slider").hide();
+            $(".gridreturn").fadeOut(300); 
+            $(".workactual").animate({
+              marginTop: "-100%"},1000).fadeOut(500);
+            $(".workhold").animate({
+              marginLeft: "0%"},1000);
+            $(".infopanel").animate({marginTop: "-100%"},1000).fadeOut(500);
+          });
     
+// _____________show skills tab__________________ 
 
   // $('#contact').click(function (event) 
   // {
