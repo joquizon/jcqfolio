@@ -6,6 +6,12 @@ console.log ("operational");
         $(".infopanel").toggleClass("infopanelA");
       }); 
 
+   $("#nikeaddcredits").click(function()
+      {
+            $(".credmodal").toggleClass("credmodalA");
+      });
+
+
 // _____________show specific work gallery_______
     $(".workgrid").click(function()
       {
@@ -17,74 +23,111 @@ console.log ("operational");
           var ItargID = targID + "INFO";
 
 
-          $("#"+MtargID).show();
-          $("#"+ItargID).show();
+          $("#"+MtargID).fadeIn();
+          $("#"+ItargID).fadeIn();
           $(".titleholder").attr("id",targID);
-          $(".workhold").animate({marginLeft: "200%"},500);
-          $(".workactual").animate({marginTop: "0%"},500);
-          $(".infopanel").animate({marginTop: "15%"},500);
+          $(".workhold").fadeOut();
       });
 
 
 // ____________from grid to scroller and back____
-    $(".momath,.seasalt").click(function(event)
-        {
+
+    function gridtoscroller()
+      {
           var targID = event.target.id;
           var targCL = event.target.className;
           $(".gridreturn").fadeIn(300)
           $(".gridreturn").attr("id",targCL);   
           $("."+targCL).attr("class","slider");
-          $(".titleholder").attr("id",targCL)
+          $(".titleholder").attr("id",targCL);
+
+
+
+          $(".slider").each(function()
+            {          
+              var workActDiv = $(".workactual").width();
+              var sliderWD = $(this).width()/workActDiv;
+              var sliderWDperc = sliderWD * 100;
+              var sliderMargin = (100 - sliderWDperc);
+              var sliderMLEFT = sliderMargin/2;
+              console.log(this);
+                $(this).css("margin-left",sliderMLEFT+"%");
+            });
+
           $("#slider").show();
           $("#"+targID).hide();
 
-          $(".topslide").attr("src","images/gallery"+targCL+"/"+targID+".jpg");
+
+
+          var workActDiv = $(".workactual").width();
+          var topslideWD = $("#"+targID).width()/workActDiv;
+          var topslideWDperc = topslideWD * 100;
+          var topslideMargin = (100 - topslideWDperc);
+          var topslideMLEFT = topslideMargin/2;
+
+
+          $(".topslide").css("margin-left",topslideMLEFT+"%");
           $(".topslide").fadeIn(200);
-          $("#topimage").attr("id",targID);      
-        });
+          $("#topimage").attr("id",targID); 
+          $(".credmodalA").attr("class","credmodal");
+      };
 
-
-    $(".gridreturn").click(function(event)
+    $(".momath,.seasalt").click(function(event)
         {
-          var targIDE = event.target.id;
-          $(".topslide").hide();
-          $(".slider").attr("class",targIDE);
-          $("."+targIDE).show();  
-          $(this).fadeOut(300);    
+          var targID = event.target.id;
+          var targCL = event.target.className;
+
+          $(".topslide").attr("src","images/gallery"+targCL+"/"+targID+".jpg");
+          gridtoscroller();
         });
+
+
+
+        $(".nike").click(function(event)
+        {
+          var targID = event.target.id;
+          var targCL = event.target.className;
+          
+          $(".topslide").attr("src","images/gallery"+targCL+"/"+targID+".gif");  
+          gridtoscroller();    
+        });
+
+
+        function backtogrid()
+          {
+                  var targIDE = event.target.id;
+                  $(".topslide").hide();
+                  $(".slider").attr("class",targIDE);
+                  $("."+ targIDE).show();
+                    $(".momath").css("margin-left","calc(12%/5)");
+                    $(".seasalt").css("margin-left","calc(25%/4)");
+                    $(".nike").css("margin-left","calc(10%/4)");
+                  $(".gridreturn").fadeOut(300); 
+                    $(".credmodalA").attr("class","credmodal");
+          };
+
+          $(".gridreturn").click(function(event)
+                {
+                  backtogrid();
+                });
 
 
 
 // ___________from grid or scroller to home______
+
+
+
           $(".titleholder").click(function()
           {
             var targIDE = event.target.id;
             var MtargIDE = targIDE + "DIV";
             var ItargIDE = targIDE + "INFO";
 
-            $(".topslide").hide();
-            $(".slider").hide();
-            $(".gridreturn").fadeOut(300); 
-            $(".workactual").animate({
-              marginTop: "-100%"},1000).fadeOut(500);
-            $(".workhold").animate({
-              marginLeft: "0%"},1000);
-            $(".infopanel").animate({marginTop: "-100%"},1000).fadeOut(500);
+            backtogrid();
+            $(".workactual").fadeOut(500);
+            $(".workhold").fadeIn();
+            $(".infopanel").fadeOut();
           });
-    
-// _____________show skills tab__________________ 
 
-  // $('#contact').click(function (event) 
-  // {
-  //     event.preventDefault();
-  //   var email = 'josequizon@jcqfolio.com';
-  //   var subject = 'Hi Jose!';
-
-  //   window.location = 'mailto:' + email + '?subject=' + subject;
-  // });
-
-// $("#imghold").attr("src","images/galleryfolder/"+targID+".jpg");
-//     $(".gallerybuttonsB").attr("id",targID);
-//     $(".gallerybuttonsF").attr("id",targID);
 
 });
