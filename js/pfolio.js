@@ -6,11 +6,11 @@ console.log ("operational");
         $(".infopanel").toggleClass("infopanelA");
       }); 
 
-   $("#nikeaddcredits").click(function()
+
+      $("#nikeaddcredits").click(function()
       {
             $(".credmodal").toggleClass("credmodalA");
       });
-
 
 // _____________show specific work gallery_______
     $(".workgrid").click(function()
@@ -22,16 +22,25 @@ console.log ("operational");
           var MtargID = targID + "DIV";
           var ItargID = targID + "INFO";
 
+          var z = $("#getter").val(targID);
+
+
+          $.ajax({
+                    url:targID+"info.php",
+                    success:function(result){
+                        console.log(result);
+                        $("#"+MtargID).html(result);
+                    }
+                });             
 
           $("#"+MtargID).fadeIn();
-          $("#"+ItargID).fadeIn();
+
           $(".titleholder").attr("id",targID);
           $(".workhold").fadeOut();
       });
 
 
 // ____________from grid to scroller and back____
-
     function gridtoscroller()
       {
           var targID = event.target.id;
@@ -72,26 +81,6 @@ console.log ("operational");
           $(".credmodalA").attr("class","credmodal");
       };
 
-    $(".momath,.seasalt").click(function(event)
-        {
-          var targID = event.target.id;
-          var targCL = event.target.className;
-
-          $(".topslide").attr("src","images/gallery"+targCL+"/"+targID+".jpg");
-          gridtoscroller();
-        });
-
-
-
-        $(".nike").click(function(event)
-        {
-          var targID = event.target.id;
-          var targCL = event.target.className;
-          
-          $(".topslide").attr("src","images/gallery"+targCL+"/"+targID+".gif");  
-          gridtoscroller();    
-        });
-
 
         function backtogrid()
           {
@@ -114,7 +103,6 @@ console.log ("operational");
 
 
 // ___________from grid or scroller to home______
-
 
 
           $(".titleholder").click(function()
