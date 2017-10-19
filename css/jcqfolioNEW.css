@@ -230,6 +230,7 @@ body{overflow:hidden }
         .infopanel{/*background-color: blue;*/
         width: 17.5%;
         height: 17vw;
+            margin-left: -18.5%;
         display: none;
         position: fixed;
         margin-top: 15%;
@@ -242,6 +243,7 @@ body{overflow:hidden }
         .infopanelA{/*background-color: blue;*/
         width: 17.5%;
         height: 17vw;
+            margin-left: -18.5%;
         display: none;
         position: fixed;
         margin-top: 15%;
