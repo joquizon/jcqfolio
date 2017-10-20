@@ -282,7 +282,7 @@ body{overflow:hidden }
     
         /*grid sets*/
         .momath{width: 22%;
-                        margin-left: calc(12%/5);
+            margin-left: calc(12%/5);
             cursor: pointer;
         margin-top: 2%;}
 
@@ -294,26 +294,32 @@ body{overflow:hidden }
         .nike{    width: 30%;
         margin-left: calc(10%/4);
         cursor: pointer;
-        margin-top: 2%;}     
-
+        margin-top: 2%;} 
+        
         /*nike additional credits modal*/
-        .credmodal{display:none;}
-        .credmodalA{display:block;}
-        #nikeaddcredits{cursor: pointer;
-            color:gray;}
+            .credmodal{display:none;}
+            .credmodalA{display:block;}
+            #nikeaddcredits{cursor: pointer;
+                color:gray;}
 
-        #credit{font-size: 1.25vw;
-        text-align: center;
-        font-family: arial;
-        width: 50%;
-        overflow-y: scroll;
-        height: 48vw;
-        position: absolute;
-        z-index: 100;
-        margin-left: 25%;
-        background-color: rgba(255,255,255,.9);
-        color: black;}
-        .credlink{color:red;}
+            #credit{font-size: 1.25vw;
+            text-align: center;
+            font-family: arial;
+            width: 50%;
+            overflow-y: scroll;
+            height: 48vw;
+            position: absolute;
+            z-index: 100;
+            margin-left: 25%;
+            background-color: rgba(255,255,255,.9);
+            color: black;}
+            .credlink{color:red;}
+
+        .olympic{width: 22%;
+            margin-left: calc(12%/5);
+            cursor: pointer;
+        margin-top: 4%;} 
+
 
 
         .slider{height: 70%;
