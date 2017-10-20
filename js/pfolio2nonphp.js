@@ -68,7 +68,6 @@ console.log ("operational");
 
           $(".topslide").css("margin-left",topslideMLEFT+"%");
           $(".topslide").fadeIn(200);
-          $("#topimage").attr("id",targID); 
           $(".credmodalA").attr("class","credmodal");
       };
 
@@ -83,7 +82,7 @@ console.log ("operational");
 
 
 
-        $(".nike").click(function(event)
+        $(".nike,.olympic").click(function(event)
         {
           var targID = event.target.id;
           var targCL = event.target.className;
@@ -99,9 +98,10 @@ console.log ("operational");
                   $(".topslide").hide();
                   $(".slider").attr("class",targIDE);
                   $("."+ targIDE).show();
-                    $(".momath").css("margin-left","calc(12%/5)");
+                    $(".momath,.olympic").css("margin-left","calc(12%/5)");
                     $(".seasalt").css("margin-left","calc(25%/4)");
                     $(".nike").css("margin-left","calc(10%/4)");
+
                   $(".gridreturn").fadeOut(300); 
                     $(".credmodalA").attr("class","credmodal");
           };
