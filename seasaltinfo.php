@@ -56,7 +56,6 @@ $result =  '
 
           $(".topslide").css("margin-left",topslideMLEFT+"%");
           $(".topslide").fadeIn(200);
-          $("#topimage").attr("id",targID); 
           $(".credmodalA").attr("class","credmodal");
       };
 
