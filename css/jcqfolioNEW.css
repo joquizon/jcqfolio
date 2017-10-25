@@ -320,7 +320,15 @@ body{overflow:hidden }
             cursor: pointer;
         margin-top: 4%;} 
 
+        .bauer{width: 22%;
+            margin-left: calc(12%/5);
+            cursor: pointer;
+        margin-top: 2%;}
 
+        .jcas{    width: 30%;
+        margin-left: calc(10%/4);
+        cursor: pointer;
+        margin-top: 2%;}         
 
         .slider{height: 70%;
              margin-top: 15%;

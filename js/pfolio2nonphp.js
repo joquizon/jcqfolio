@@ -82,7 +82,7 @@ console.log ("operational");
 
 
 
-        $(".nike,.olympic").click(function(event)
+        $(".nike,.olympic,.bauer,.jcas").click(function(event)
         {
           var targID = event.target.id;
           var targCL = event.target.className;
@@ -98,9 +98,9 @@ console.log ("operational");
                   $(".topslide").hide();
                   $(".slider").attr("class",targIDE);
                   $("."+ targIDE).show();
-                    $(".momath,.olympic").css("margin-left","calc(12%/5)");
+                    $(".momath,.olympic,.bauer").css("margin-left","calc(12%/5)");
                     $(".seasalt").css("margin-left","calc(25%/4)");
-                    $(".nike").css("margin-left","calc(10%/4)");
+                    $(".nike,.jcas").css("margin-left","calc(10%/4)");
 
                   $(".gridreturn").fadeOut(300); 
                     $(".credmodalA").attr("class","credmodal");
