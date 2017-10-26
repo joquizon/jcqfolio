@@ -71,7 +71,7 @@ console.log ("operational");
           $(".credmodalA").attr("class","credmodal");
       };
 
-    $(".momath,.seasalt").click(function(event)
+    $(".momath,.seasalt,.deck").click(function(event)
         {
           var targID = event.target.id;
           var targCL = event.target.className;
@@ -100,6 +100,7 @@ console.log ("operational");
                   $("."+ targIDE).show();
                     $(".momath,.olympic,.bauer").css("margin-left","calc(12%/5)");
                     $(".seasalt").css("margin-left","calc(25%/4)");
+                    $(".deck").css("margin-left", "calc(20%/6)");
                     $(".nike,.jcas").css("margin-left","calc(10%/4)");
 
                   $(".gridreturn").fadeOut(300); 
