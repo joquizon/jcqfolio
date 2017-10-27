@@ -4,6 +4,7 @@ console.log ("operational");
       {
         $(".skillsmodalA").toggleClass("skillsmodal");
         $(".infopanel").toggleClass("infopanelA");
+          $(".workhold").toggleClass("workholdA");
       }); 
 
 

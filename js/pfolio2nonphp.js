@@ -4,6 +4,8 @@ console.log ("operational");
       {
         $(".skillsmodalA").toggleClass("skillsmodal");
         $(".infopanel").toggleClass("infopanelA");
+
+          $(".workhold").toggleClass("workholdA");
       }); 
 
    $("#nikeaddcredits").click(function()
@@ -27,6 +29,9 @@ console.log ("operational");
           $("#"+ItargID).fadeIn();
           $(".titleholder").attr("id",targID);
           $(".workhold").fadeOut();
+          $(".workholdA").attr("class","workhold");
+          $(".skillsmodal").attr("class","skillsmodalA");
+                  $(".infopanelA").attr("class","infopanel");
       });
 
 
