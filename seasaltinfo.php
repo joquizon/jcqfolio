@@ -1,23 +1,26 @@
 <?php 
 
 $result =  '
-	<div class="infopanel" id="seasaltINFO">
-		<p>
-			SEASALT BBQ RUB
-			context:
-			Branding Class proj. 2014
-			The Seasalt branding assignment, required the designer to brand a randomly assigned item. A container for the item and the shirt were used as the implementation for the branding elements. The item was branded to appeal to a younger tailgating crowd while exuding a nostalgic, down home energy.
-			role: Graphic Designer, Modeler 
-			software:Illustrator, Lightwave 
-		</p>
-	</div>		
-		<img class="topslide" id="topimage" src="images/galleryseasalt/#.jpg">
-		<img class="seasalt" id="seasaltworkA" src="images/galleryseasalt/seasaltworkA.jpg">
-		<img class="seasalt" id="seasaltworkB" src="images/galleryseasalt/seasaltworkB.jpg">
-		<img class="seasalt" id="seasaltworkC" src="images/galleryseasalt/seasaltworkC.jpg">
-		<img class="seasalt" id="seasaltworkD" src="images/galleryseasalt/seasaltworkD.jpg">
-		<img class="seasalt" id="seasaltworkE" src="images/galleryseasalt/seasaltworkE.jpg">
-		<img class="seasalt" id="seasaltworkF" src="images/galleryseasalt/seasaltworkF.jpg">
+    <div class="infopanel" id="seasaltINFO">
+      <p>
+        <span class="projtitle">SEASALT BBQ RUB</span><br><br>
+        Context /<br>
+        <span>Branding Class</span><br><br>
+        About /<br>
+        The Seasalt branding assignment, required the designer to brand a randomly assigned item. A container for the item and the shirt were used as the implementation for the branding elements. The item was branded to appeal to a younger tailgating crowd while exuding a nostalgic, down home energy.<br><br>
+        Role /<br>
+        Graphic Designer, Modeler 
+        software:Illustrator, Lightwave 
+      </p>
+    </div>    
+    <img class="topslide" id="topimage" src="images/galleryseasalt/#.jpg">
+    <img class="seasalt" id="seasaltworkA" src="images/galleryseasalt/seasaltworkA.jpg">
+    <img class="seasalt" id="seasaltworkB" src="images/galleryseasalt/seasaltworkB.jpg">
+    <img class="seasalt" id="seasaltworkC" src="images/galleryseasalt/seasaltworkC.jpg">
+    <img class="seasalt" id="seasaltworkD" src="images/galleryseasalt/seasaltworkD.jpg">
+    <img class="seasalt" id="seasaltworkE" src="images/galleryseasalt/seasaltworkE.jpg">
+    <img class="seasalt" id="seasaltworkF" src="images/galleryseasalt/seasaltworkF.jpg">
+
 				<script>
 
     function gridtoscroller()

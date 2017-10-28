@@ -1,15 +1,15 @@
 <?php 
 
 $result =  '
-	 <div class="workactual" id="nikeDIV">
-    <div class="infopanel" id="nikeINFO">
+<div class="infopanel" id="nikeINFO">
       <p>
-        NIKE COLLAGE VIDEO
-        context:
-        Graphic Design Class proj. 2013
-        For the Nike collage assignment various video sources were collected and edited by the designer to be the foundation for a video juxtaposition. The graphic overlays and animations were designed to echo the constant movement and frenetic energy commonly seen in many Nike commercials.
-        role: Graphic Designer, Animator, Video Editor, Video Compiler, 
-        software:Illustrator, Flash, Sony Vegas<br>
+        <span class="projtitle">NIKE COLLAGE VIDEO</span><br><br>
+        Context /<br>
+        Graphic Design Class<br><br>
+        About /<br>
+        For the Nike collage assignment various video sources were collected and edited by the designer to be the foundation for a video juxtaposition. The graphic overlays and animations were designed to echo the constant movement and frenetic energy commonly seen in many Nike commercials.<br><br>
+        Role /<br>Graphic Designer, Animator, Video Editor, Video Compiler<br>
+
         <span id="nikeaddcredits"> Additional Credits</span>
       </p>
     </div>

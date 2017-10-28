@@ -1,19 +1,18 @@
 <?php 
 
 $result =  '
-  <div class="workactual" id="olympicDIV">
     <div class="infopanel" id="olympicINFO">
       <p>
-        THE AMERICAN STATE OF THE OLYMPICS
-        context:
-        Information Graphics class proj. 2014
-
-        The American State project was created for the data mapping assignment. It illustrates where the Olympic athletes of 2012 and 2014 originate from and compares these athletes and states by population count as well as economically and meteorologically. The interactive infographic was created in flash and can be viewed on flash enabled devices 
+        <span class="projtitle">The<br> AMERICAN STATE<br> of the<br> OLYMPICS</span><br><br>
+        Context /<br>
+        Information Graphics<br><br>
+        About /<br>
+        The American State project was created for a data mapping assignment. It illustrates where the Olympic athletes of 2012 and 2014 originate from and compares these athletes and states by population count as well as economically and meteorologically. The interactive infographic was created in flash and can be viewed on flash enabled devices 
         <a href="http://jcqfolio.com/olympics/">
         here.
-        </a>
-        role: Graphic Designer, Animator, Action Script Coder 
-        software:Illustrator, Flash
+        </a><br><br>
+        Role /<br>
+        Graphic Designer, Animator, Action Script Coder
       </p>
     </div>
 

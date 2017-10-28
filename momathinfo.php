@@ -2,29 +2,26 @@
 
 $result =  '
 
-	<div class="infopanel" id="momathINFO">
-		<p>
-			MUSEUM OF MATHEMATICS
-			context:
-			Branding Class proj. 2014
+    <div class="infopanel" id="momathINFO">
+      <p>
+        <span class="projtitle">MUSEUM of MATHEMATICS</span><br><br>
+        Context /<br>
+        Branding Class<br><br>
+        About /<br>
+        The Museum of Mathematics 
+        rebranding assignment, required 
+        an overhaul of the museum brand 
+        elements and deliverables. The 
+        logo and wordmarks were 
+        redesigned, while the museum 
+        stationery, poster and brochure 
+        were assigned as the 
+        implementation.<br><br>
 
-			The Museum of Mathematics 
-			rebranding assignment, required 
-			an overhaul of the museums brand 
-			elements and deliverables. The 
-			logo and wordmarks were 
-			redesigned, while the museum 
-			stationery, poster and brochure 
-			were assigned as the 
-			implementation.
-
-			role: 
-			Graphic Designer, Photographer
-			software: 
-			Photoshop, Illustrator, 
-			Flash, Lightwave
-		</p>
-	</div>
+        Role / <br>
+        Graphic Designer, Photographer<br>
+      </p>
+    </div>
 
 <img class="topslide" id="topimage" src="images/gallerymomath/#.jpg">
 		<img class="momath" id="momathworkA" src="images/gallerymomath/momathworkA.jpg">
