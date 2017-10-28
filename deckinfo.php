@@ -1,17 +1,16 @@
 <?php 
 
 $result =  '
-   <div class="workactual" id="deckDIV">
     <div class="infopanel" id="deckINFO">
       <p>
-        CLUB DIAMOND PLAYING CARDS
-        context:
-        Graphic Design Class proj. 2013
+        <span class="projtitle">CLUB DIAMOND <br>Playing cards</span><br><br>
+        Context /<br>
+        Graphic Design Class<br><br>
+        About /<br>
+        The Game assignment required the designer to produce a package for a game. The designer chose the traditional deck of cards for redesign. The concept cards produced were meant to exude a contemporary look that did not stray too far from standard playing card requirements. The minimal look of the packaging was meant to refer back to the bars used in the card designs, while its opening was inspired by the classic zippo lighter design.<br><br>
 
-        The Game assignment required the designer to produce a package for a game. The designer chose the traditional deck of cards for redesign. The concept cards produced were meant to exude a contemporary look that did not stray too far from standard playing card requirements. The packagings minimal look was meant to refer back to the bars used in the card designs, while its opening was inspired by the classic zippo lighter design.
-
-        role: Graphic Designer, Modeler
-        software: Illustrator, Lightwave 
+        Role /<br>
+        Graphic Designer, Modeler
       </p>
     </div>
 

@@ -4,17 +4,17 @@ $result =  '
    <div class="workactual" id="jcasDIV">
     <div class="infopanel" id="jcasINFO">
       <p>
-              JCAS 3
-      context:
-      Web Development 100 Class proj. 2015
+      <span class="projtitle">JCAS 3</span><br><br>
+      Context /<br>
+      Web Development Class<br><br>
+      About /<br>
+      The JCAS 3 project was created to exhibit accrued introductory knowledge of html, javascript, and css. The project is comprised of 3 html pages that introduces viewers to JCAS 3 the robot, and subsequent pages that allow the user to examine the droid and command him to execute 3 dance moves. The project is currently live and can be visited here.<br><br>
 
-      The JCAS 3 project was created to exhibit accrued introductory knowledge of html, javascript, and css. The project is comprised of 3 html pages that introduces viewers to JCAS 3 the robot, and subsequent pages that allow the user to examine the droid and command him to execute 3 dance moves. The project is currently live and can be visited here.
-
-      role: Graphic Designer, Coder, Animator, 3d Model builder 
-      software: Sublime Text, Illustrator, Flash, Photoshop, Lightwave 
+      Role /<br>
+       Graphic Designer, Coder, Animator, 3d Model builder
 
       </p>
-    </div>
+    </div>v>
 
 
     <img class="topslide" id="topimage" src="images/galleryjcas/#.gif">

@@ -4,14 +4,14 @@ $result =  '
     <div class="workactual" id="bauerDIV">
     <div class="infopanel" id="bauerINFO">
       <p>
-        THE BAUER COUNT
-        context:
-        Information Graphics class proj. 2014
+        <span class="projtitle">The<br> BAUER COUNT</span><br><br>
+        Context /<br>
+        Information Graphics class<br><br>
+        About /<br>
+        The Bauer Count project was designed for a current event infographic assignment. Created to celebrate the return of 24 to the small screen, the project was designed to show the number of on-screenkills Jack Bauer had in the original 8 season run. The interactive infographic was created in flash and can be viewed on flash enabled devices here.<br><br>
 
-        The Bauer Count project was designed for a current event infographic assignment. Created to celebrate the return of Foxs 24 to the small screen, the project was designed to show the number of on-screenkills Jack Bauer had in the original 8 season run. The interactive infographic was created in flash and can be viewed on flash enabled devices here.
-
-        role: Graphic Designer, Animator, Action Script Coder 
-        software:Illustrator, Flash 
+        Role /<br>
+         Graphic Designer, Animator, Action Script Coder 
       </p>
     </div>
 
